@@ -3,11 +3,12 @@
 title chayanne
 :change
 set batpath="C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\chayanne.bat"
-set rm="C:\Users\%user%\AppData\Local\Microsoft\Windows\Themes\Anime By Brasileno2010.theme">>%batpath%
-set th=%theme%>>%batpath%
 
 set /P user=Nombre de Usuario:
 set /P theme=Nombre del Tema a Cargar:
+
+set rm="C:\Users\%user%\AppData\Local\Microsoft\Windows\Themes\Anime By Brasileno20$
+set th=%theme%
 
 if exist %batpath% (
 	del /F /Q %batpath%
@@ -32,12 +33,14 @@ set /P option=Que quieres hacer? :
 
 if %option% == 1 (
 	shutdown -r -f -t 5
-)
-
-if %option% == 2 (
-	goto change
-)
-
-if %option% == 3 (
-	exit
+) else (
+	if %option% == 2 (
+		goto change
+	) else (
+		if %option% == 3 (
+			exit
+		) else (
+			exit
+		)
+	)
 )
