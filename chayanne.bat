@@ -7,7 +7,7 @@ set batpath="C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\chayan
 set /P user=Nombre de Usuario:
 set /P theme=Nombre del Tema a Cargar:
 
-set rm="C:\Users\%user%\AppData\Local\Microsoft\Windows\Themes\Anime By Brasileno20$
+set rm="C:\Users\%user%\AppData\Local\Microsoft\Windows\Themes\Anime By Brasileno2010.theme"
 set th=%theme%
 
 if exist %batpath% (
